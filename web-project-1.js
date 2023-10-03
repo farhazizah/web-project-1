@@ -8,7 +8,20 @@ menu.addEventListener("click", function () {
 window.onscroll = () => {
   navbar.classList.remove("active")
 };
+//setting
+const setting = document.querySelector('#setting');
+const settingContent = document.querySelector('.setting-content');
 
+setting.addEventListener('click', function() {
+    if(settingContent.style.display === 'none') {
+        settingContent.style.display = 'block';
+    } else{
+        settingContent.style.display = 'none';
+    }
+})
+window.addEventListener('scroll', function() {
+    settingContent.style.display = 'none';
+})
 //dark theme
 const icon = document.getElementById('sun');
 const body = document.querySelector('body');
