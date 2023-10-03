@@ -46,7 +46,9 @@ header {
     font-weight: 600;
 
 }
-
+.navbar-container {
+    display: flex;
+}
 .navbar {
     display: flex;
 }
